@@ -5,7 +5,13 @@
 
 #### 分配
 * 网络    6
-    * 
+    * 题目1 
+        * 当使用TCP协议编程时，下列问题哪个是必须由程序员考虑和处理的()
+            * A: 乱序数据包的重传
+            * B: 数据传输过程中的纠错
+            * C: 网络拥塞处理
+            * D: 发送数据的格式和应用层协议
+        * 答案 D 
 * 数据结构与算法    6
     * 题目 1
         * 在KMP算法中，已知模式串为ADABCADADA，请写出模式串的next数组值（ ）
@@ -105,29 +111,35 @@
         * 答案 D
     * 题目2
         * 关于strcpy和memset区别，说法正确的是()
-            * strcpy只能复制字符串
-            * memcpy可以复制任意内容
-            * strcpy不需要指定长度，它遇到被复制字符的串结束符"\0"才结束
-            * memcpy则是根据其第3个参数决定复制的长度
+            * A: strcpy只能复制字符串
+            * B: memcpy可以复制任意内容
+            * C: strcpy不需要指定长度，它遇到被复制字符的串结束符"\0"才结束
+            * D: memcpy则是根据其第3个参数决定复制的长度
         * 答案： A.B.C.D
     * 题目3
         * 关于&和nohub说法正确的是()
-            A: &是指在后台运行
-            B: &当用户推出(挂起)的时候，命令自动也跟着退出
-            C: nohup运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号
-            D: nohup启动的命令不能被kill
+            * A: &是指在后台运行
+            * B: &当用户推出(挂起)的时候，命令自动也跟着退出
+            * C: nohup运行由 Command参数和任何相关的 Arg参数指定的命令，忽略所有挂断（SIGHUP）信号
+            * D: nohup启动的命令不能被kill
         * 答案 A.B.C
-     * 题目4
-         * 
-         ```shell
-         #include <stdlib.h>
-#include <stdio.h>
-char *f(){
-        char x[512];
-        sprintf (x, "hello world");
-        return x[6];
-}
-void main(){
-        printf("%s\n",f());
-}
-```   
+    * 题目4
+         * 对如下C语言程序在普通X86 PC上面运行时候的输出叙述正确的是()
+         ```C
+            #include <stdlib.h>
+            #include <stdio.h>
+            char *f(){
+                    char x[512];
+                    sprintf (x, "hello world");
+                    return x[6];
+            }
+            void main(){
+                    printf("%s\n",f());
+            }
+            ```   
+            * A: 程序可能崩溃，也可能输出hello world
+            * B: 程序可能崩溃，也可能输出world
+            * C: 程序可能崩溃，也可能输出hello
+            * D: 程序一定会崩溃
+        * 答案
+            * B
